@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate, Redirect, Navigate } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 import { setAuthThunk } from '../../redux/auth-reducer';
-import Preloader from '../Preloader/Preloader';
 import s from './Login.module.css';
 
 const Login = (props) => {
@@ -13,7 +12,6 @@ const Login = (props) => {
     const isAuth = useSelector(state => state.auth.isAuth);
     const error = useSelector(state => state.auth.error);
     const isCheck = useSelector(state => state.auth.isCheck);
-    const isLoading = useSelector(state => state.loading.isLoading);
 
     let handleSubmit = () =>{
         dispatch(setAuthThunk(login, password, true))
