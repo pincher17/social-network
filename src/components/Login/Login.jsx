@@ -44,12 +44,12 @@ const Login = (props) => {
                     className={error ? s.input_error : s.input_password} />
                 </div>
                 
-            <button disabled={isLoading && true} 
+            <button disabled={isCheck && true} 
             onClick={handleSubmit} 
-            className={isLoading ? s.btn_disabled : s.btn} 
+            className={isCheck ? s.btn_disabled : s.btn} 
             type='button'>
             {
-            isLoading ? 'Проверяю...' : 'Войти'
+            isCheck ? 'Проверяю...' : 'Войти'
             }
             </button>
         </form>
