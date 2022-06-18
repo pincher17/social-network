@@ -1,0 +1,33 @@
+.wrapper_all{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.wrapper_post_img{
+    display: flex;
+}
+
+.profile_img{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.post{
+    
+    max-width: 700px;
+}
+
+
+.title{
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.body_text{
+    margin-bottom: 40px;
+}
+
+.preloader_wrapper{
+    margin: 200px auto;
+  }

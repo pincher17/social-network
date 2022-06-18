@@ -1,0 +1,40 @@
+.header{
+  background-color: rgb(85, 126, 238);
+  border-radius: 10px;
+  margin-top: 15px;
+  max-width: 1180px;
+}
+
+.header_wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.login_block{
+  margin-right: 15px;
+}
+
+.logo{
+  width: 80px;
+}
+
+.btn_exit, .login_block a{
+  color: rgb(85, 126, 238);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 15px 5px 15px;
+  background-color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 742px){
+  .btn_exit, .login_block a{
+    display: none;
+  }
+  .header{
+    margin-top: 0;
+    border-radius: 0;
+  }
+}

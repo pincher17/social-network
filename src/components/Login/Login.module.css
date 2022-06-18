@@ -1,0 +1,55 @@
+.wrapper{
+  padding-left: 15px;
+    padding-right: 15px;
+}
+
+.button{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(85, 126, 238);
+  }
+
+.login, .password{
+    margin-bottom: 10px;
+}
+
+.input_error{
+  border: 1px solid red;
+  height: 25px;
+  width: 200px;
+  font-size: 16px;
+}
+
+.error_message{
+  color: red;
+}
+
+.input_login, .input_password{
+  width: 200px;
+  font-size: 16px;
+  height: 25px;
+}
+
+.btn{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 15px 5px 15px;
+  background-color: rgb(85, 126, 238);
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+}
+
+.btn_disabled{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 15px 5px 15px;
+  background-color: rgba(85, 126, 238, 0.733);
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+}

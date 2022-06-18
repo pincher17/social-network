@@ -1,0 +1,32 @@
+.nav{
+    width: 150px;
+    height: 300px;
+    background-color: rgb(85, 126, 238);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+
+.item{
+  margin-bottom: 10px;
+  width: max-content;
+}
+
+.item a{
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.item a[class="active"] {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+@media (max-width: 742px){
+  .nav{
+    display: none;
+  }
+
+}

@@ -1,0 +1,10 @@
+.app {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.content_wrapper{
+  display: flex;
+  margin-top: 15px;
+  
+}
