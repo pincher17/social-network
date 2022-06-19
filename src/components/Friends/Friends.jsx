@@ -20,7 +20,7 @@ const Friends = (props) =>{
        
       }, [])
 
-      if (isLoading){
+      if (isLoading || isAuth === 'not check'){
         return <Preloader />
       }
 

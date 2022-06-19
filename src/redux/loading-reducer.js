@@ -5,7 +5,7 @@ const SET_LOADING = 'SET_LOADING';
 
 let initialState = {
 
-    isLoading: false
+    isLoading: true
 
 }
 

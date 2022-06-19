@@ -7,7 +7,7 @@ const SET_ERROR = 'SET_ERROR'
 const CHECK = 'CHECK'
 
 let initialState = {
-    isAuth: false,
+    isAuth: 'not check',
     error: false,
     isCheck: false
 }
@@ -78,6 +78,7 @@ export const setAuthThunk = (login, password, submit = false) =>{
                 dispatch(setLoading(false))
                 dispatch(setError(true && submit));
                 dispatch(check(false))
+                dispatch(setAuth(response));
             }
             
           });

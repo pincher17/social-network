@@ -32,7 +32,9 @@ const Profile = (props) => {
        
       }, [])
 
-  if (isLoading){
+  console.log(isAuth)
+
+  if (isLoading || isAuth === 'not check'){
     return <Preloader />
   }
   
