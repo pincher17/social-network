@@ -4,6 +4,7 @@ import { Navigate, NavLink } from 'react-router-dom';
 import { getFriendsThunk } from '../../redux/friends-reducer';
 import s from './Friends.module.css';
 import avatar from '../../img/matureman.png'
+import Preloader from '../Preloader/Preloader';
 
 
 const Friends = (props) =>{
@@ -11,12 +12,17 @@ const Friends = (props) =>{
     const dispatch = useDispatch();
     const friends = useSelector(state => state.friends.friends);
     const isAuth = useSelector(state => state.auth.isAuth);
+    const isLoading = useSelector(state => state.loading.isLoading);
 
     useEffect(() => {
     
         dispatch(getFriendsThunk())
        
       }, [])
+
+      if (isLoading){
+        return <Preloader />
+      }
 
       if (!isAuth){
         return <Navigate to='/login' />
