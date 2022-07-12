@@ -1,5 +1,8 @@
 # Тестовое задание на позицию Front-End React разработчика
 
+**username**: `Admin`  
+**password**: `12345`
+
 [https://pincher17.github.io/social-network](https://pincher17.github.io/social-network)
 
 ## Задача:
